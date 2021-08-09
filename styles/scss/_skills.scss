@@ -1,0 +1,76 @@
+// SKILLS SECTION
+
+.skills {
+  background: #f4f4f4;
+}
+
+.skillsSection h2 {
+  @include sectionHeading();
+  position: relative;
+}
+
+.skillsSection h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.skillsSection h2::before {
+  content: "/ / /";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.skillsSet ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background: $commonFontColor;
+  border-radius: 40px;
+  box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.skillsSet li {
+  width: calc(100% / 5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px 0;
+}
+
+.skillsSet i {
+  font-size: 80px;
+  background: #f4f4f4;
+  color: #111;
+  border-radius: 50%;
+  padding: 30px;
+  box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.mobile i {
+  padding: 30px 45px;
+}
+
+// .skillsSet i:hover,
+// .skillsSet i:focus,
+// .skillsSet i:active {
+
+// }
+
+.skillsSet h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+  font-family: $secondaryFontFamily;
+  padding-top: 20px;
+}

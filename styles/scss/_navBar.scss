@@ -1,0 +1,42 @@
+// Logo
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo a {
+  @include logo();
+  transform: rotate(-45deg);
+  line-height: 1.1;
+  padding-top: 6px;
+}
+
+.logo {
+  border: 2px solid $commonFontColor;
+  transform: rotate(45deg);
+  width: 55px;
+  height: 55px;
+}
+
+nav ul {
+  @include navigation();
+}
+
+nav li {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+nav li:hover,
+nav li:focus,
+nav li:active {
+  border-bottom: 2px solid $commonFontColor;
+}
+
+nav li a {
+  color: $commonFontColor;
+  //   padding-bottom: 10px;
+}

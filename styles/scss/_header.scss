@@ -1,0 +1,98 @@
+header {
+  background: #3d3d3d;
+  height: 100vh;
+}
+.headerContainer {
+  margin-top: 155px;
+}
+
+header h3 {
+  color: $commonFontColor;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  letter-spacing: 4px;
+}
+
+h1 {
+  @include header();
+}
+
+header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 70% 102%;
+  width: 100%;
+  height: 140px;
+  background-color: white;
+  right: 0px;
+  bottom: -80px;
+}
+
+header h2 {
+  text-align: center;
+  font-family: $secondaryFontFamily;
+  font-size: 40px;
+}
+
+.typingEffect {
+  width: 53ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.scrollDown {
+  margin-left: 80px;
+}
+
+.scrollDown a {
+  animation: bounce 2s infinite;
+  margin-top: 80px;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+// .scrollDown a {
+//   width: 25px;
+//   height: 25px;
+//   opacity: 0.9;
+// }
+
+.scrollDown i {
+  color: $commonFontColor;
+  opacity: 0.7;
+  font-size: 30px;
+}

@@ -1,0 +1,40 @@
+@mixin header() {
+  font-family: $secondaryFontFamily;
+  //   font-weight: 700;
+  font-style: normal;
+  font-size: 85px;
+  //   text-transform: uppercase;
+  //   text-align: center;
+  margin-top: 10px;
+  line-height: 1.1;
+  color: $commonFontColor;
+}
+
+@mixin sectionHeading() {
+  font-family: $secondaryFontFamily;
+  font-weight: 600;
+  font-size: 45px;
+  color: #111;
+  text-align: center;
+}
+
+@mixin para() {
+  font-family: $secondaryFontFamily;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@mixin navigation() {
+  font-family: $secondaryFontFamily;
+  font-weight: 400;
+  font-size: 12px;
+  color: $commonFontColor;
+  //   line-height: 20px;
+}
+
+@mixin logo() {
+  font-family: "MonteCarlo", cursive;
+  font-style: italic;
+  font-size: 35px;
+  color: $commonFontColor;
+}
