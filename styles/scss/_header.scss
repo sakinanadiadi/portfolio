@@ -1,7 +1,12 @@
 header {
-  background: #3d3d3d;
+  background: $blackColor;
+  // background-image: url(../assets/bg.jpg);
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-position: center;
   height: 100vh;
 }
+
 .headerContainer {
   margin-top: 155px;
 }
@@ -65,7 +70,7 @@ header h2 {
 }
 
 .scrollDown a {
-  animation: bounce 2s infinite;
+  animation: bounce 3s infinite;
   margin-top: 80px;
 }
 
@@ -95,4 +100,33 @@ header h2 {
   color: $commonFontColor;
   opacity: 0.7;
   font-size: 30px;
+}
+
+.top {
+  position: fixed;
+  bottom: 0;
+  right: 40px;
+}
+
+.top a {
+  color: #757575;
+  font-size: 50px;
+  animation: bounce 3s infinite;
+  opacity: 0.7;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }

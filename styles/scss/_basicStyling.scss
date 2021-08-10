@@ -10,19 +10,12 @@ html {
 body {
   font-size: 1.5rem;
   font-family: Poppins, Arial, sans-serif;
-  // font-size: 12px;
   font-weight: 300;
   line-height: 1.5;
   background-color: #fff;
-  color: #757575;
+  color: $blackColor;
   letter-spacing: 1px;
 }
-
-// .mainWrapper {
-//   width: 100%;
-//   margin: 0 auto;
-//   max-width: 1366px;
-// }
 
 .wrapper {
   width: 90%;

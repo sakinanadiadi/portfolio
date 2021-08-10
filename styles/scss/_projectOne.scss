@@ -38,6 +38,8 @@
 
 .projectsSection h3 {
   @include h3Heading();
+  font-size: 30px;
+  letter-spacing: 2px;
   padding-bottom: 10px;
 }
 
@@ -61,17 +63,20 @@
 .linkButton button {
   @include button();
   padding: 20px;
-  background: $secondaryColor;
+  // background: $secondaryColor;
   display: inline-block;
   border-radius: 25px;
-  border: 2px solid #757575;
+  border: 2px solid $primaryColor;
+  border: 2px solid $primaryColor;
+  box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
 .linkButton button:hover,
 .linkButton button:focus,
 .linkButton button:active {
-  background: #757575;
+  background: $blackColor;
   color: $commonFontColor;
+  border: 2px solid $commonFontColor;
 }
 
 .linkButton > button:nth-child(1) {
@@ -80,16 +85,13 @@
 
 .projectImage {
   position: relative;
-  width: calc(65% - 30px);
+  width: calc(55% - 30px);
   margin-left: 30px;
   background: $secondaryColor;
   border-radius: 40px;
+  border: 1px solid $primaryColor;
   box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.3);
 }
-
-// .desktop {
-//   width: 55%;
-// }
 
 .mobile {
   width: 30%;

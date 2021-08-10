@@ -50,6 +50,10 @@
         <div class="scrollDown">
           <a href="#about"><i class="fas fa-angle-double-down"></i></a>
         </div>
+
+        <div class="top">
+          <a href="#home"><i class="fas fa-chevron-up"></i></a>
+        </div>
       </div>
     </header>
 
@@ -335,10 +339,95 @@
           </div>
         </div>
       </section>
+
+      <!-- SECTION OF FORM -->
+      <section id="contact" class="contact">
+        <div class="wrapper contactForm">
+          <h2>Contact</h2>
+          <div class="mainFormContainer">
+            <form action="#">
+              <div class="formCointainerOne">
+                <label for="name" class="sr-only" aria-label="hidden"
+                  >Name:</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+                <label for="email" class="sr-only" aria-label="hidden"
+                  >E-mail:</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+              </div>
+
+              <label for="message" class="sr-only">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="70"
+                rows="6"
+                placeholder="Message"
+                required
+                maxlength="200"
+              ></textarea>
+
+              <button>SEND MESSAGE</button>
+            </form>
+
+            <div class="contactInformation">
+              <h3>Let's Connect!</h3>
+              <p>
+                Have an idea about an app or a project? Let's team up and make
+                it a reality!
+              </p>
+              <ul>
+                <li>
+                  <h3>PHONE</h3>
+                  <p><i class="fas fa-phone-alt"></i>+1 647-2340-169</p>
+                </li>
+                <li>
+                  <h3>EMAIL</h3>
+                  <p><i class="fas fa-envelope"></i>sakina.nadiadi@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
-      <p>Created</p>
+      <div class="wrapper footerSection">
+        <div class="logo">
+          <a href="#home">Sn</a>
+        </div>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/sakina-nadiadi/"></a
+            ><i class="fab fa-linkedin"></i>
+          </li>
+          <li>
+            <a href="https://twitter.com/Sakina49700147"></a
+            ><i class="fab fa-twitter-square"></i>
+          </li>
+          <li>
+            <a href="https://github.com/sakinanadiadi"></a
+            ><i class="fab fa-github-square"></i>
+          </li>
+        </ul>
+
+        <p>Developed by Sakina Nadiadi 2021</p>
+      </div>
     </footer>
   </body>
 </html>

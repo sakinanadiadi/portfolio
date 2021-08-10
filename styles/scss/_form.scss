@@ -1,0 +1,129 @@
+.contact {
+  background: $secondaryColor;
+}
+
+.contactForm h2 {
+  @include sectionHeading();
+  position: relative;
+}
+
+.contactForm h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.contactForm h2::before {
+  content: "/ / /";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.mainFormContainer {
+  display: flex;
+  margin-top: 70px;
+}
+
+.mainFormContainer form {
+  width: calc(50% - 50px);
+  margin-right: 50px;
+}
+
+// .contact form {
+//   margin-top: 70px;
+// }
+.formCointainerOne {
+  display: flex;
+  justify-content: space-between;
+}
+
+#name {
+  margin-right: 25px;
+}
+
+#name,
+#email {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  border-radius: 10px;
+
+  border: 1px solid $primaryColor;
+  box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+#message {
+  margin: 10px 0;
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 15px;
+  border-radius: 10px;
+
+  border: 1px solid $primaryColor;
+  box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.mainFormContainer form button {
+  @include button();
+  margin-top: 10px;
+  padding: 15px 30px;
+  background: $secondaryColor;
+  display: inline-block;
+  border-radius: 10px;
+  border: 2px solid $primaryColor;
+  box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.mainFormContainer form button:hover,
+.mainFormContainer form button:focus,
+.mainFormContainer form button:active {
+  background: $blackColor;
+  color: $commonFontColor;
+  border: 2px solid $commonFontColor;
+}
+
+// contact information div
+
+.contactInformation {
+  width: calc(50% - 50px);
+  margin-left: 50px;
+}
+
+.contactInformation h3 {
+  @include h3Heading();
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.contactInformation p {
+  @include para();
+  margin: 10px 0;
+}
+
+.contactInformation ul h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111;
+  font-family: $secondaryFontFamily;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+.contactInformation ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactInformation i {
+  margin-right: 10px;
+}
