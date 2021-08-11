@@ -2,11 +2,8 @@
 
 .navContainer {
   position: fixed;
-  // width: 100%;
   background: $blackColor;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
+  // background: #981f00;
   top: 0;
   left: 0;
   width: 100%;
@@ -22,6 +19,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 80%;
+  position: relative;
 }
 
 // .navContainer {
@@ -78,6 +76,9 @@ nav li a {
   display: none;
   padding-top: 30px;
   padding-right: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .bar {

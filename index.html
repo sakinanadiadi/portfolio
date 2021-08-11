@@ -50,19 +50,19 @@
         </div>
         <div class="headerContainer">
           <h3>Hello, I'm Sakina Nadiadi</h3>
-          <div class="typingEffect">
-            <!-- <h1>Front-End Developer</h1> -->
-            <h1>
-              <a
-                href=""
-                class="typewrite"
-                data-period="2000"
-                data-type='[ "Front-End Developer", "Clean Codes", "I Love Design", "Passion For Painting" ]'
-              >
-                <span class="wrap"></span>
-              </a>
-            </h1>
-          </div>
+          <!-- <div class="typingEffect"> -->
+          <!-- <h1>Front-End Developer</h1> -->
+          <h1>
+            <a
+              href=""
+              class="typewrite"
+              data-period="2000"
+              data-type='[ "Front-End Developer", "Clean Codes", "I Love Design", "Passion For Painting" ]'
+            >
+              <span class="wrap"></span>
+            </a>
+          </h1>
+          <!-- </div> -->
         </div>
         <div class="scrollDown">
           <a href="#about"><i class="fas fa-angle-double-down"></i></a>
@@ -363,7 +363,7 @@
         <div class="wrapper contactForm">
           <h2>Contact</h2>
           <div class="mainFormContainer">
-            <form action="#">
+            <form aname="contact" method="POST" data-netlify="true">
               <div class="formCointainerOne">
                 <label for="name" class="sr-only" aria-label="hidden"
                   >Name:</label
@@ -398,7 +398,7 @@
                 maxlength="200"
               ></textarea>
 
-              <button>SEND MESSAGE</button>
+              <button type="submit">SEND MESSAGE</button>
             </form>
 
             <div class="contactInformation">

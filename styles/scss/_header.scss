@@ -1,10 +1,10 @@
 header {
   background: $blackColor;
-  // background-image: url(../assets/bg2.jpg);
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
+  background-image: url(../assets/orange.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   // background-position: center;
-  // background-size: cover;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -74,27 +74,27 @@ header h2 {
   font-size: 40px;
 }
 
-.typingEffect {
-  width: 53ch;
-  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid;
-  font-family: monospace;
-  font-size: 2em;
-}
+// .typingEffect {
+//   width: 53ch;
+//   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+//   white-space: nowrap;
+//   overflow: hidden;
+//   border-right: 2px solid;
+//   font-family: monospace;
+//   font-size: 2em;
+// }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
+// @keyframes typing {
+//   from {
+//     width: 0;
+//   }
+// }
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
+// @keyframes blink {
+//   50% {
+//     border-color: transparent;
+//   }
+// }
 
 .scrollDown {
   margin-left: 80px;
