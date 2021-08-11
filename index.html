@@ -21,6 +21,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Portfolio</title>
   </head>
@@ -48,7 +49,7 @@
             </div>
           </nav>
         </div>
-        <div class="headerContainer">
+        <div class="headerContainer" data-aos="fade-down">
           <h3>Hello, I'm Sakina Nadiadi</h3>
           <!-- <div class="typingEffect"> -->
           <!-- <h1>Front-End Developer</h1> -->
@@ -78,10 +79,10 @@
     <main>
       <section id="about" class="about">
         <div class="wrapper aboutSection">
-          <div class="ownImage">
+          <div class="ownImage" data-aos="fade-right">
             <img src="./assets/pic.jpg" alt="photo of Sakina" />
           </div>
-          <div class="content">
+          <div class="content" data-aos="fade-left">
             <h3>Hello! My Name is Sakina Nadiadi</h3>
             <p>
               Passion and diligence are two traits that I believe most reflect
@@ -111,7 +112,7 @@
         <div class="wrapper skillsSection">
           <h2>Skills</h2>
           <div class="skillsSet">
-            <ul>
+            <ul data-aos="fade-right">
               <li>
                 <i class="devicon-html5-plain"></i>
                 <h3>HTML5</h3>
@@ -164,7 +165,7 @@
           <div class="projectsContainer">
             <!-- Project 1 -->
             <div class="project">
-              <div class="projectContent">
+              <div class="projectContent" data-aos="fade-right">
                 <h3>Fridge Poetry</h3>
                 <ul>
                   <li>HTML |</li>
@@ -194,7 +195,7 @@
                   </button>
                 </div>
               </div>
-              <div class="projectImage">
+              <div class="projectImage" data-aos="fade-left">
                 <div class="desktop">
                   <img
                     src="./assets/fridgePoetry/fridgeDes_macbookgrey_front.png"
@@ -212,7 +213,7 @@
 
             <!-- project 2 -->
             <div class="project projectTwo">
-              <div class="projectImage">
+              <div class="projectImage" data-aos="fade-right">
                 <div class="desktop">
                   <img
                     src="./assets/filmyStudio/Capture1_macbookgrey_front.png"
@@ -226,7 +227,7 @@
                   />
                 </div>
               </div>
-              <div class="projectContent">
+              <div class="projectContent" data-aos="fade-left">
                 <h3>Filmy Studio</h3>
                 <ul>
                   <li>HTML |</li>
@@ -260,7 +261,7 @@
 
             <!-- project 3 -->
             <div class="project projectThree">
-              <div class="projectContent">
+              <div class="projectContent" data-aos="fade-right">
                 <h3>Knowledge Hub</h3>
                 <ul>
                   <li>HTML |</li>
@@ -290,7 +291,7 @@
                   </button>
                 </div>
               </div>
-              <div class="projectImage">
+              <div class="projectImage" data-aos="fade-left">
                 <div class="desktop">
                   <img
                     src="./assets/knowledgeHub/newKnow_macbookgrey_front.png"
@@ -308,7 +309,7 @@
 
             <!-- Project 4 -->
             <div class="project projectTwo">
-              <div class="projectImage">
+              <div class="projectImage" data-aos="fade-right">
                 <div class="desktop">
                   <img
                     src="./assets/funplace/fundes_macbookgrey_front.png"
@@ -322,7 +323,7 @@
                   />
                 </div>
               </div>
-              <div class="projectContent">
+              <div class="projectContent" data-aos="fade-left">
                 <h3>Fun Place</h3>
                 <ul>
                   <li>HTML |</li>
@@ -363,7 +364,7 @@
         <div class="wrapper contactForm">
           <h2>Contact</h2>
           <div class="mainFormContainer">
-            <form aname="contact" method="POST" data-netlify="true">
+            <form action="https://formspree.io/f/mgerpwbn" method="post">
               <div class="formCointainerOne">
                 <label for="name" class="sr-only" aria-label="hidden"
                   >Name:</label
@@ -453,5 +454,12 @@
 
     <!-- JavaScript -->
     <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 800,
+      });
+    </script>
   </body>
 </html>
