@@ -71,3 +71,24 @@ nav li a {
   color: $commonFontColor;
   //   padding-bottom: 10px;
 }
+
+// hamburger menu
+
+.hamburger {
+  display: none;
+  padding-top: 30px;
+  padding-right: 50px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: $commonFontColor;
+}
+
+.hamburger .bar:first-child {
+  margin-top: 0;
+}

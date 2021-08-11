@@ -1,0 +1,66 @@
+@media (max-width: 775px) {
+  nav {
+    justify-content: end;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    text-decoration: none;
+  }
+
+  nav ul {
+    position: fixed;
+    left: 100%;
+    flex-direction: column;
+    background-color: $commonFontColor;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1;
+    opacity: 0.9;
+    padding-left: 0;
+    // padding-bottom: 30px;
+    border: 2px solid $primaryColor;
+  }
+
+  nav ul.active {
+    left: 0;
+  }
+
+  nav ul li {
+    margin: 25px auto;
+    width: 85%;
+  }
+
+  nav ul li:hover,
+  nav ul li:focus {
+    border-bottom: 2px solid $blackColor;
+    opacity: 0.8;
+  }
+
+  nav a {
+    // @include button();
+    // background-color: $commonFontColor;
+    color: $blackColor;
+    // background-color: red;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 1;
+    position: fixed;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

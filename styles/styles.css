@@ -378,6 +378,26 @@ nav li a {
   color: #efefef;
 }
 
+.hamburger {
+  display: none;
+  padding-top: 30px;
+  padding-right: 50px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #efefef;
+}
+
+.hamburger .bar:first-child {
+  margin-top: 0;
+}
+
 header {
   background: #111;
   height: 100vh;
@@ -1073,4 +1093,75 @@ footer {
 
 .contactInformation i {
   margin-right: 10px;
+}
+
+@media (max-width: 775px) {
+  nav {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+
+  nav a:hover,
+nav a:focus {
+    text-decoration: none;
+  }
+
+  nav ul {
+    position: fixed;
+    left: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #efefef;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 1;
+    opacity: 0.9;
+    padding-left: 0;
+    border: 2px solid #757575;
+  }
+
+  nav ul.active {
+    left: 0;
+  }
+
+  nav ul li {
+    margin: 25px auto;
+    width: 85%;
+  }
+
+  nav ul li:hover,
+nav ul li:focus {
+    border-bottom: 2px solid #111;
+    opacity: 0.8;
+  }
+
+  nav a {
+    color: #111;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 1;
+    position: fixed;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
 }

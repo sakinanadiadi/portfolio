@@ -1,3 +1,15 @@
+// Hamburger Menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector("nav ul ");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+}
+
+// H1
 let TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
