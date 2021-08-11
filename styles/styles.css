@@ -295,7 +295,7 @@ body {
 }
 
 section {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 img {
@@ -313,7 +313,18 @@ a {
   display: inline-block;
 }
 
+.navContainer {
+  position: fixed;
+  background: #111;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 nav {
+  padding: 15px 0;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,26 +334,26 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px 0;
+  width: 80%;
 }
 
 .logo a {
   font-family: "MonteCarlo", cursive;
   font-style: italic;
-  font-size: 35px;
+  font-size: 25px;
   color: #efefef;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
   line-height: 1.1;
-  padding-top: 6px;
+  padding-top: 2px;
 }
 
 .logo {
   border: 2px solid #efefef;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  width: 55px;
-  height: 55px;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  width: 35px;
+  height: 35px;
 }
 
 nav ul {
@@ -373,7 +384,7 @@ header {
 }
 
 .headerContainer {
-  margin-top: 155px;
+  padding-top: 190px;
 }
 
 header h3 {
@@ -382,7 +393,6 @@ header h3 {
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 20px;
-  margin-top: 50px;
   letter-spacing: 4px;
 }
 
@@ -395,13 +405,17 @@ h1 {
   color: #efefef;
 }
 
+.headerContainer h1 a {
+  color: #efefef;
+}
+
 header::before {
   content: "";
   display: block;
   position: absolute;
-  border-radius: 70% 102%;
   width: 100%;
-  height: 140px;
+  border-radius: 92% 102%;
+  height: 155px;
   background-color: white;
   right: 0px;
   bottom: -80px;
@@ -452,7 +466,7 @@ header h2 {
 .scrollDown a {
   -webkit-animation: bounce 3s infinite;
           animation: bounce 3s infinite;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 @-webkit-keyframes bounce {
@@ -529,12 +543,6 @@ footer {
   margin: 0 auto 30px auto;
 }
 
-.footerSection .logo a {
-  padding-bottom: 8px;
-  padding-top: 0;
-  line-height: inherit;
-}
-
 .footerSection ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -554,11 +562,31 @@ footer {
   font-size: 40px;
 }
 
+.footerSection p a {
+  color: #efefef;
+}
+
+.about {
+  position: relative;
+}
+
+.about::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-radius: 92% 102%;
+  height: 155px;
+  background-color: white;
+  right: 0px;
+  bottom: -80px;
+  z-index: 1;
+}
+
 .aboutSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 50px;
 }
 
 .ownImage {
@@ -600,8 +628,49 @@ footer {
   line-height: 2.2;
 }
 
+.content button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  background: #eaeaea;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 25px;
+  border: 2px solid #757575;
+  border: 2px solid #757575;
+  -webkit-box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+.content button:hover,
+.content button:focus,
+.content button:active {
+  background: #111;
+  color: #efefef;
+  border: 2px solid #efefef;
+}
+
 .skills {
   background: #eaeaea;
+  position: relative;
+}
+
+.skills::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-radius: 92% 102%;
+  height: 155px;
+  background-color: #eaeaea;
+  right: 0px;
+  bottom: -80px;
+}
+
+.skillsSection {
+  padding-top: 50px;
 }
 
 .skillsSection h2 {
@@ -664,6 +733,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -690,6 +761,27 @@ footer {
   color: #111;
   font-family: "Montserrat", sans-serif;
   padding-top: 20px;
+}
+
+.projects {
+  position: relative;
+}
+
+.projects::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-radius: 92% 102%;
+  height: 155px;
+  background-color: white;
+  right: 0px;
+  bottom: -80px;
+  z-index: 1;
+}
+
+.projectsSection {
+  padding-top: 50px;
 }
 
 .projectsSection h2 {
@@ -831,6 +923,10 @@ footer {
 
 .contact {
   background: #eaeaea;
+}
+
+.contactForm {
+  padding-top: 50px;
 }
 
 .contactForm h2 {

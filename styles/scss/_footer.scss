@@ -9,12 +9,6 @@ footer {
   margin: 0 auto 30px auto;
 }
 
-.footerSection .logo a {
-  padding-bottom: 8px;
-  padding-top: 0;
-  line-height: inherit;
-}
-
 .footerSection ul {
   display: flex;
   justify-content: space-between;
@@ -28,4 +22,8 @@ footer {
 
 .footerSection i {
   font-size: 40px;
+}
+
+.footerSection p a {
+  color: $commonFontColor;
 }

@@ -2,6 +2,23 @@
 
 .skills {
   background: $secondaryColor;
+  position: relative;
+}
+
+.skills::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-radius: 92% 102%;
+  height: 155px;
+  background-color: $secondaryColor;
+  right: 0px;
+  bottom: -80px;
+}
+
+.skillsSection {
+  padding-top: 50px;
 }
 
 .skillsSection h2 {
@@ -46,6 +63,7 @@
   width: calc(100% / 5);
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   margin: 70px 0;
 }

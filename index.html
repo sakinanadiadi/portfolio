@@ -27,26 +27,36 @@
   <body>
     <!-- HEADER -->
     <header id="home">
-      <div class="wrapper">
-        <nav>
-          <div class="logo">
-            <a href="#home">Sn</a>
-          </div>
-          <ul>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#contact">CONTACT </a></li>
-          </ul>
-        </nav>
-
+      <div class="wrapper headerMainContainer">
+        <div class="navContainer">
+          <nav>
+            <div class="logo">
+              <a href="#home">Sn</a>
+            </div>
+            <ul>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#skills">SKILLS</a></li>
+              <li><a href="#projects">PROJECTS</a></li>
+              <li><a href="#contact">CONTACT </a></li>
+            </ul>
+          </nav>
+        </div>
         <div class="headerContainer">
           <h3>Hello, I'm Sakina Nadiadi</h3>
           <div class="typingEffect">
-            <h1>Front-End Developer</h1>
+            <!-- <h1>Front-End Developer</h1> -->
+            <h1>
+              <a
+                href=""
+                class="typewrite"
+                data-period="2000"
+                data-type='[ "Front-End Developer", "Clean Codes", "I Love Design", "Passion For Painting" ]'
+              >
+                <span class="wrap"></span>
+              </a>
+            </h1>
           </div>
         </div>
-        <!-- <div class="wave"></div> -->
         <div class="scrollDown">
           <a href="#about"><i class="fas fa-angle-double-down"></i></a>
         </div>
@@ -59,7 +69,7 @@
 
     <!-- Main -->
     <main>
-      <section id="about">
+      <section id="about" class="about">
         <div class="wrapper aboutSection">
           <div class="ownImage">
             <img src="./assets/pic.jpg" alt="photo of Sakina" />
@@ -84,6 +94,7 @@
               principles and watching my web pages’ shrink into mobile screens
               and still look amazing.”
             </p>
+            <button><a href="./assets/Resume.pdf"></a>DOWNLOAD RESUME</button>
           </div>
         </div>
       </section>
@@ -140,7 +151,7 @@
       </section>
 
       <!-- SECTION OF PROJECTS -->
-      <section id="projects">
+      <section id="projects" class="projects">
         <div class="wrapper projectsSection">
           <h2>Projects</h2>
           <div class="projectsContainer">
@@ -426,8 +437,14 @@
           </li>
         </ul>
 
-        <p>Developed by Sakina Nadiadi 2021</p>
+        <p>
+          &copy 2021 Developed by
+          <a href="https://github.com/sakinanadiadi">Sakina Nadiadi</a>
+        </p>
       </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="./app.js"></script>
   </body>
 </html>

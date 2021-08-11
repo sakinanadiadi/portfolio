@@ -2,6 +2,10 @@
   background: $secondaryColor;
 }
 
+.contactForm {
+  padding-top: 50px;
+}
+
 .contactForm h2 {
   @include sectionHeading();
   position: relative;
