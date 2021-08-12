@@ -284,7 +284,7 @@ body {
   font-weight: 300;
   line-height: 1.5;
   background-color: #fff;
-  color: #111;
+  color: #001830;
   letter-spacing: 1px;
 }
 
@@ -315,7 +315,8 @@ a {
 
 .navContainer {
   position: fixed;
-  background: #111;
+  background: #001830;
+  opacity: 0.8;
   top: 0;
   left: 0;
   width: 100%;
@@ -334,7 +335,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
+  width: 90%;
   position: relative;
 }
 
@@ -403,8 +404,8 @@ nav li a {
 }
 
 header {
-  background: #111;
-  background-image: url(../assets/orange.jpg);
+  background: #001830;
+  background-image: url(../assets/navy.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -412,7 +413,7 @@ header {
 }
 
 .headerContainer {
-  padding-top: 190px;
+  padding-top: 170px;
 }
 
 header h3 {
@@ -457,12 +458,13 @@ header h2 {
 
 .scrollDown {
   margin-left: 80px;
+  z-index: 999;
 }
 
 .scrollDown a {
   -webkit-animation: bounce 3s infinite;
           animation: bounce 3s infinite;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 @-webkit-keyframes bounce {
@@ -496,7 +498,6 @@ header h2 {
 }
 .scrollDown i {
   color: #efefef;
-  opacity: 0.7;
   font-size: 30px;
 }
 
@@ -504,10 +505,12 @@ header h2 {
   position: fixed;
   bottom: 0;
   right: 40px;
+  z-index: 999;
 }
 
 .top a {
-  color: #757575;
+  color: #001830;
+  -webkit-text-stroke: 2px #efefef;
   font-size: 50px;
   -webkit-animation: bounce 3s infinite;
           animation: bounce 3s infinite;
@@ -529,7 +532,7 @@ header h2 {
   }
 }
 footer {
-  background: #111;
+  background: #001830;
   text-align: center;
   padding: 50px 0 15px 0;
   color: #efefef;
@@ -601,8 +604,8 @@ footer {
 }
 
 .ownImage img {
-  -webkit-box-shadow: 15px 15px #e5e5e5;
-          box-shadow: 15px 15px #e5e5e5;
+  -webkit-box-shadow: 15px 15px #001830;
+          box-shadow: 15px 15px #001830;
 }
 
 .content {
@@ -614,7 +617,7 @@ footer {
   margin-bottom: 18px;
   font-size: 24px;
   font-weight: 700;
-  color: #111;
+  color: #001830;
 }
 
 .content p {
@@ -629,7 +632,8 @@ footer {
   font-weight: 400;
   font-size: 16px;
   cursor: pointer;
-  background: #eaeaea;
+  background: white;
+  background: radial-gradient(circle, white 0%, rgba(0, 27, 67, 0.7633928571) 96%);
   padding: 20px;
   display: inline-block;
   border-radius: 25px;
@@ -643,13 +647,14 @@ footer {
 .content button:hover,
 .content button:focus,
 .content button:active {
-  background: #111;
+  background: #001830;
   color: #efefef;
   border: 2px solid #efefef;
 }
 
 .skills {
-  background: #eaeaea;
+  background: white;
+  background: radial-gradient(circle, white 0%, rgba(0, 27, 67, 0.7633928571) 96%);
   position: relative;
 }
 
@@ -660,7 +665,7 @@ footer {
   width: 100%;
   border-radius: 92% 102%;
   height: 155px;
-  background-color: #eaeaea;
+  background-color: white;
   right: 0px;
   bottom: -80px;
 }
@@ -673,7 +678,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 45px;
-  color: #111;
+  color: #001830;
   text-align: center;
   position: relative;
 }
@@ -739,7 +744,8 @@ footer {
 
 .skillsSet i {
   font-size: 80px;
-  background: #efefef;
+  background: white;
+  background: radial-gradient(circle, white 58%, rgba(0, 27, 67, 0.3180147059) 100%);
   color: #111;
   border-radius: 50%;
   padding: 30px;
@@ -784,7 +790,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 45px;
-  color: #111;
+  color: #001830;
   text-align: center;
   position: relative;
 }
@@ -836,7 +842,7 @@ footer {
 .projectsSection h3 {
   font-size: 24px;
   font-weight: 700;
-  color: #111;
+  color: #001830;
   font-size: 30px;
   letter-spacing: 2px;
   padding-bottom: 10px;
@@ -868,7 +874,8 @@ footer {
   font-weight: 400;
   font-size: 16px;
   cursor: pointer;
-  background: #eaeaea;
+  background: white;
+  background: radial-gradient(circle, white 0%, rgba(0, 27, 67, 0.7633928571) 96%);
   padding: 20px;
   display: inline-block;
   border-radius: 25px;
@@ -881,7 +888,7 @@ footer {
 .linkButton button:hover,
 .linkButton button:focus,
 .linkButton button:active {
-  background: #111;
+  background: #001830;
   color: #efefef;
   border: 2px solid #efefef;
 }
@@ -894,7 +901,8 @@ footer {
   position: relative;
   width: calc(55% - 30px);
   margin-left: 30px;
-  background: #eaeaea;
+  background: white;
+  background: radial-gradient(circle, white 58%, rgba(0, 27, 67, 0.3180147059) 100%);
   border-radius: 40px;
   border: 1px solid #757575;
   -webkit-box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.3);
@@ -918,7 +926,8 @@ footer {
 }
 
 .contact {
-  background: #eaeaea;
+  background: white;
+  background: radial-gradient(circle, white 0%, rgba(0, 27, 67, 0.7633928571) 96%);
 }
 
 .contactForm {
@@ -929,7 +938,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 45px;
-  color: #111;
+  color: #001830;
   text-align: center;
   position: relative;
 }
@@ -1009,10 +1018,11 @@ footer {
   font-weight: 400;
   font-size: 16px;
   cursor: pointer;
-  background: #eaeaea;
+  background: white;
+  background: radial-gradient(circle, white 0%, rgba(0, 27, 67, 0.7633928571) 96%);
   margin-top: 10px;
   padding: 15px 30px;
-  background: #eaeaea;
+  background: white;
   display: inline-block;
   border-radius: 10px;
   border: 2px solid #757575;
@@ -1023,7 +1033,7 @@ footer {
 .mainFormContainer form button:hover,
 .mainFormContainer form button:focus,
 .mainFormContainer form button:active {
-  background: #111;
+  background: #001830;
   color: #efefef;
   border: 2px solid #efefef;
 }
@@ -1036,7 +1046,7 @@ footer {
 .contactInformation h3 {
   font-size: 24px;
   font-weight: 700;
-  color: #111;
+  color: #001830;
   font-size: 30px;
   letter-spacing: 2px;
   margin-bottom: 10px;
@@ -1183,7 +1193,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #111;
+    background-color: #001830;
     width: 100%;
     text-align: center;
     -webkit-transition: 0.3s;
@@ -1192,7 +1202,6 @@ footer {
     opacity: 0.9;
     padding-left: 0;
     border: 2px solid #efefef;
-    color: red;
   }
 
   nav ul.active {

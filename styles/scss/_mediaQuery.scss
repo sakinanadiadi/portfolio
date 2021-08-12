@@ -93,11 +93,6 @@
   //   justify-content: end;
   // }
 
-  // nav a:hover,
-  // nav a:focus {
-  //   text-decoration: none;
-  // }
-
   nav ul {
     position: fixed;
     left: 100%;
@@ -109,14 +104,11 @@
     z-index: 1;
     opacity: 0.9;
     padding-left: 0;
-    // padding-bottom: 30px;
     border: 2px solid $commonFontColor;
-    color: red;
   }
 
   nav ul.active {
     left: 0;
-
     top: 0;
   }
 

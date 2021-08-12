@@ -1,26 +1,14 @@
 header {
   background: $blackColor;
-  background-image: url(../assets/orange.jpg);
+  background-image: url(../assets/navy.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  // background-position: center;
   background-size: cover;
   height: 100vh;
 }
 
-// .headerMainContainer {
-//   // display: flex;
-//   // flex-direction: column;
-//   // align-content: center;
-//   padding-top: 100px;
-// }
-
-// .headerContainer {
-//   margin-top: 155px;
-// }
-
 .headerContainer {
-  padding-top: 190px;
+  padding-top: 170px;
 }
 
 header h3 {
@@ -45,10 +33,7 @@ header::before {
   content: "";
   display: block;
   position: absolute;
-  // border-radius: 70% 102%;
   width: 100%;
-  // height: 140px;
-
   border-radius: 92% 102%;
   height: 155px;
   background-color: white;
@@ -56,53 +41,20 @@ header::before {
   bottom: -80px;
 }
 
-// header::after {
-//   content: "";
-//   display: block;
-//   position: absolute;
-//   border-radius: 70% 102%;
-//   width: 100%;
-//   height: 140px;
-//   background-color: blueviolet;
-//   right: 0px;
-//   bottom: -80px;
-// }
-
 header h2 {
   text-align: center;
   font-family: $secondaryFontFamily;
   font-size: 40px;
 }
 
-// .typingEffect {
-//   width: 53ch;
-//   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-//   white-space: nowrap;
-//   overflow: hidden;
-//   border-right: 2px solid;
-//   font-family: monospace;
-//   font-size: 2em;
-// }
-
-// @keyframes typing {
-//   from {
-//     width: 0;
-//   }
-// }
-
-// @keyframes blink {
-//   50% {
-//     border-color: transparent;
-//   }
-// }
-
 .scrollDown {
   margin-left: 80px;
+  z-index: 999;
 }
 
 .scrollDown a {
   animation: bounce 3s infinite;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 @keyframes bounce {
@@ -121,15 +73,8 @@ header h2 {
   }
 }
 
-// .scrollDown a {
-//   width: 25px;
-//   height: 25px;
-//   opacity: 0.9;
-// }
-
 .scrollDown i {
   color: $commonFontColor;
-  opacity: 0.7;
   font-size: 30px;
 }
 
@@ -137,10 +82,15 @@ header h2 {
   position: fixed;
   bottom: 0;
   right: 40px;
+  z-index: 999;
 }
 
 .top a {
-  color: #757575;
+  // color: #757575;
+
+  color: $blackColor;
+  -webkit-text-stroke: 2px $commonFontColor;
+  // color: white;
   font-size: 50px;
   animation: bounce 3s infinite;
   opacity: 0.7;

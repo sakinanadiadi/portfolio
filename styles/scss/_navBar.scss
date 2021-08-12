@@ -3,38 +3,27 @@
 .navContainer {
   position: fixed;
   background: $blackColor;
-  // background: #981f00;
+  opacity: 0.8;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
 }
 nav {
-  // background: $blackColor;
-  // position: relative;
   padding: 15px 0;
   margin: 0 auto;
-  // position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90%;
   position: relative;
 }
-
-// .navContainer {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   // padding: 5px 0;
-// }
 
 .logo a {
   @include logo();
   transform: rotate(-50deg);
   line-height: 1.1;
   padding-top: 2px;
-  // color: red;
 }
 
 .logo {
@@ -42,16 +31,10 @@ nav {
   transform: rotate(50deg);
   width: 35px;
   height: 35px;
-  // position: absolute;
-  // top: 15px;
-  // left: 130px;
 }
 
 nav ul {
   @include navigation();
-  // display: flex;
-  // justify-content: end;
-  // align-items: center;
 }
 
 nav li {
@@ -67,7 +50,6 @@ nav li:active {
 
 nav li a {
   color: $commonFontColor;
-  //   padding-bottom: 10px;
 }
 
 // hamburger menu

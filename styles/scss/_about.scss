@@ -33,7 +33,8 @@
   justify-content: center;
 }
 .ownImage img {
-  box-shadow: 15px 15px #e5e5e5;
+  box-shadow: 15px 15px $blackColor;
+  // box-shadow: 15px 15px #e5e5e5;
 }
 
 .content {

@@ -2,6 +2,7 @@
 
 .skills {
   background: $secondaryColor;
+  background: $secondaryGradient;
   position: relative;
 }
 
@@ -70,7 +71,9 @@
 
 .skillsSet i {
   font-size: 80px;
-  background: $commonFontColor;
+  // background: $commonFontColor;
+  background: $secondaryColor;
+  background: $innerGradient;
   color: #111;
   border-radius: 50%;
   padding: 30px;
