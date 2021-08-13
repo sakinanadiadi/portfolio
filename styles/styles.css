@@ -1293,3 +1293,8 @@ nav ul li:focus {
     top: 85px;
   }
 }
+@media (max-width: 375px) {
+  h1 {
+    font-size: 55px;
+  }
+}
