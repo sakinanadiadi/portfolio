@@ -1087,6 +1087,18 @@ footer {
     font-size: 75px;
   }
 }
+@media (min-width: 926px) and (orientation: landscape) {
+  header::before {
+    display: none;
+    width: 0;
+    height: 0;
+    background: none;
+  }
+
+  .scrollDown a {
+    margin-top: 30px;
+  }
+}
 @media (max-width: 931px) {
   .skillsSet i {
     font-size: 55px;
@@ -1247,13 +1259,6 @@ nav ul li:focus {
   }
 }
 @media (max-width: 735px) {
-  header::before {
-    display: none;
-    width: 0;
-    height: 0;
-    background: none;
-  }
-
   .skillsSet li {
     margin: 40px 0;
   }
