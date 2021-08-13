@@ -57,7 +57,6 @@
   border: 1px solid $primaryColor;
   box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.3);
   margin-top: 50px;
-  // color: $blackColor;
 }
 
 .skillsSet li {
@@ -71,7 +70,6 @@
 
 .skillsSet i {
   font-size: 80px;
-  // background: $commonFontColor;
   background: $secondaryColor;
   background: $innerGradient;
   color: #111;
@@ -83,12 +81,6 @@
 .responsive i {
   padding: 30px 45px;
 }
-
-// .skillsSet i:hover,
-// .skillsSet i:focus,
-// .skillsSet i:active {
-
-// }
 
 .skillsSet h3 {
   font-size: 18px;

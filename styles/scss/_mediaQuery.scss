@@ -89,10 +89,6 @@
 }
 
 @media (max-width: 775px) {
-  // nav {
-  //   justify-content: end;
-  // }
-
   nav ul {
     position: fixed;
     left: 100%;
@@ -124,8 +120,6 @@
   }
 
   nav li a {
-    // @include button();
-    // background-color: $commonFontColor;
     color: $commonFontColor;
   }
 
