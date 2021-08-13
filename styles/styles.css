@@ -1261,6 +1261,10 @@ nav ul li:focus {
   }
 }
 @media (max-width: 630px) {
+  h1 {
+    font-size: 65px;
+  }
+
   .ownImage {
     width: 50%;
   }
