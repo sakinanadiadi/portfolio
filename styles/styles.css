@@ -1247,6 +1247,13 @@ nav ul li:focus {
   }
 }
 @media (max-width: 735px) {
+  header::before {
+    display: none;
+    width: 0;
+    height: 0;
+    background: none;
+  }
+
   .skillsSet li {
     margin: 40px 0;
   }
