@@ -51,12 +51,16 @@
 
 .content button {
   @include button();
-  padding: 20px;
   display: inline-block;
   border-radius: 25px;
   border: 2px solid $primaryColor;
   box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.3);
   margin-top: 20px;
+}
+
+.content button a {
+  color: $blackColor;
+  padding: 20px;
 }
 
 .content button:hover,
@@ -65,4 +69,10 @@
   background: $blackColor;
   color: $commonFontColor;
   border: 2px solid $commonFontColor;
+}
+
+.content a:hover,
+.content a:focus,
+.content a:active {
+  color: $commonFontColor;
 }

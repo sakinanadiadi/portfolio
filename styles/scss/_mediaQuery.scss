@@ -3,16 +3,12 @@
     font-size: 75px;
   }
 }
-@media (min-width: 926px) and (orientation: landscape) {
+@media (max-width: 926px) and (orientation: landscape) {
   header::before {
     display: none;
     width: 0;
     height: 0;
     background: none;
-  }
-
-  .scrollDown a {
-    margin-top: 30px;
   }
 }
 
