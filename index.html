@@ -51,8 +51,6 @@
         </div>
         <div class="headerContainer">
           <h3>Hello, I'm Sakina Nadiadi</h3>
-          <!-- <div class="typingEffect"> -->
-          <!-- <h1>Front-End Developer</h1> -->
           <h1>
             <a
               href=""
@@ -63,7 +61,6 @@
               <span class="wrap"></span>
             </a>
           </h1>
-          <!-- </div> -->
         </div>
         <div class="scrollDown">
           <a href="#about"><i class="fas fa-angle-double-down"></i></a>
@@ -79,10 +76,10 @@
     <main>
       <section id="about" class="about">
         <div class="wrapper aboutSection">
-          <div class="ownImage">
+          <div class="ownImage" data-aos="flip-left">
             <img src="./assets/pic.jpg" alt="photo of Sakina" />
           </div>
-          <div class="content">
+          <div class="content" data-aos="flip-left">
             <h3>Hello! My Name is Sakina Nadiadi</h3>
             <p>
               “I’m a customer service representative turned a front-end
@@ -101,7 +98,9 @@
               In my pastime, I do canvas painting and indulge myself to learn
               about new trends and technologies.”
             </p>
-            <button><a href="./assets/Resume.pdf"></a>DOWNLOAD RESUME</button>
+            <button>
+              <a href="./cv/Resume.pdf" download></a>DOWNLOAD RESUME
+            </button>
           </div>
         </div>
       </section>
@@ -110,7 +109,7 @@
       <section id="skills" class="skills">
         <div class="wrapper skillsSection">
           <h2>Skills</h2>
-          <div class="skillsSet">
+          <div class="skillsSet" data-aos="flip-left">
             <ul>
               <li>
                 <i class="devicon-html5-plain"></i>
@@ -164,7 +163,7 @@
           <div class="projectsContainer">
             <!-- Project 1 -->
             <div class="project">
-              <div class="projectContent">
+              <div class="projectContent" data-aos="flip-left">
                 <h3>Fridge Poetry</h3>
                 <ul>
                   <li>HTML |</li>
@@ -196,7 +195,7 @@
                   </button>
                 </div>
               </div>
-              <div class="projectImage">
+              <div class="projectImage" data-aos="flip-left">
                 <div class="desktop">
                   <img
                     src="./assets/fridgePoetry/fridgeDes_macbookgrey_front.png"
@@ -214,7 +213,7 @@
 
             <!-- project 2 -->
             <div class="project projectTwo">
-              <div class="projectImage">
+              <div class="projectImage" data-aos="flip-left">
                 <div class="desktop">
                   <img
                     src="./assets/filmyStudio/Capture1_macbookgrey_front.png"
@@ -228,7 +227,7 @@
                   />
                 </div>
               </div>
-              <div class="projectContent">
+              <div class="projectContent" data-aos="flip-left">
                 <h3>Filmy Studio</h3>
                 <ul>
                   <li>HTML |</li>
@@ -264,7 +263,7 @@
 
             <!-- project 3 -->
             <div class="project projectThree">
-              <div class="projectContent">
+              <div class="projectContent" data-aos="flip-left">
                 <h3>Knowledge Hub</h3>
                 <ul>
                   <li>HTML |</li>
@@ -293,7 +292,7 @@
                   </button>
                 </div>
               </div>
-              <div class="projectImage">
+              <div class="projectImage" data-aos="flip-left">
                 <div class="desktop">
                   <img
                     src="./assets/knowledgeHub/newKnow_macbookgrey_front.png"
@@ -311,7 +310,7 @@
 
             <!-- Project 4 -->
             <div class="project projectTwo">
-              <div class="projectImage">
+              <div class="projectImage" data-aos="flip-left">
                 <div class="desktop">
                   <img
                     src="./assets/funplace/fundes_macbookgrey_front.png"
@@ -325,7 +324,7 @@
                   />
                 </div>
               </div>
-              <div class="projectContent">
+              <div class="projectContent" data-aos="flip-left">
                 <h3>Fun Place</h3>
                 <ul>
                   <li>HTML |</li>
@@ -336,7 +335,10 @@
                   <li>Firebase</li>
                 </ul>
                 <p>
-                  Fully responsive and accessible design with some modal pop up.
+                  Multipage website, a fully responsive static with a wonderful
+                  graphical theme, made using raw HTML and carefully crafted
+                  CSS, compatible across variety of devices with different
+                  screen resolutions and sizes.
                 </p>
                 <div class="linkButton">
                   <button>
@@ -454,12 +456,9 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        // offset: 400,
+        offset: 400,
         duration: 800,
       });
     </script>
-    <!-- <script>
-      AOS.init();
-    </script> -->
   </body>
 </html>
