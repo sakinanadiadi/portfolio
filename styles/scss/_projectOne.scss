@@ -83,12 +83,16 @@
 
 .linkButton button {
   @include button();
-  padding: 20px;
+  // padding: 20px;
   display: inline-block;
   border-radius: 25px;
   border: 2px solid $primaryColor;
-  border: 2px solid $primaryColor;
   box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.linkButton button a {
+  color: $blackColor;
+  padding: 20px;
 }
 
 .linkButton button:hover,
@@ -97,6 +101,12 @@
   background: $blackColor;
   color: $commonFontColor;
   border: 2px solid $commonFontColor;
+}
+
+.linkButton a:hover,
+.linkButton a:focus,
+.linkButton a:active {
+  color: $commonFontColor;
 }
 
 .linkButton > button:nth-child(1) {

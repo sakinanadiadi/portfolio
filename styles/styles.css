@@ -889,13 +889,16 @@ footer {
   cursor: pointer;
   background: white;
   background: radial-gradient(circle, white 0%, rgba(0, 27, 67, 0.7633928571) 96%);
-  padding: 20px;
   display: inline-block;
   border-radius: 25px;
   border: 2px solid #757575;
-  border: 2px solid #757575;
   -webkit-box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.linkButton button a {
+  color: #001830;
+  padding: 20px;
 }
 
 .linkButton button:hover,
@@ -904,6 +907,12 @@ footer {
   background: #001830;
   color: #efefef;
   border: 2px solid #efefef;
+}
+
+.linkButton a:hover,
+.linkButton a:focus,
+.linkButton a:active {
+  color: #efefef;
 }
 
 .linkButton > button:nth-child(1) {
@@ -1070,8 +1079,53 @@ footer {
   font-weight: 400;
   font-size: 16px;
   margin: 10px 0;
+  position: relative;
 }
 
+.contactInformation p a {
+  color: #001830;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.fa-hand-point-left {
+  font-size: 30px;
+  position: absolute;
+  bottom: -3px;
+  right: 120px;
+  -webkit-animation: hand 3s infinite;
+          animation: hand 3s infinite;
+}
+
+@-webkit-keyframes hand {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  60% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+}
+
+@keyframes hand {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+  60% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+}
 .contactInformation ul h3 {
   font-size: 18px;
   font-weight: 500;
