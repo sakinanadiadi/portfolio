@@ -1437,4 +1437,8 @@ nav ul li:focus {
   h1 {
     font-size: 55px;
   }
+
+  .fa-hand-point-left {
+    right: 60px;
+  }
 }
